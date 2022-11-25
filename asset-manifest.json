@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-countries/static/css/main.082eef35.css",
+    "main.js": "/react-countries/static/js/main.eb27907e.js",
+    "index.html": "/react-countries/index.html",
+    "static/media/icon-sun.svg": "/react-countries/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
+    "static/media/icon-search-black.svg": "/react-countries/static/media/icon-search-black.ac7bd86c404ec216d46db2a7358501c6.svg",
+    "static/media/icon-search-white.svg": "/react-countries/static/media/icon-search-white.00699402c145903fddd137b2126d48a4.svg",
+    "static/media/arrow-black.svg": "/react-countries/static/media/arrow-black.a4e85ceb60d59f3c8367a7d68154de2a.svg",
+    "static/media/arrow-white.svg": "/react-countries/static/media/arrow-white.b2657b0662980d54250ee0b42a6829de.svg",
+    "static/media/arrow-left-black.svg": "/react-countries/static/media/arrow-left-black.83aa775a65892efff8dd306eccced5ba.svg",
+    "static/media/arrow-left-white.svg": "/react-countries/static/media/arrow-left-white.5558b95b6f08c035e8b799ac22517641.svg",
+    "static/media/icon-moon.svg": "/react-countries/static/media/icon-moon.c49e9564cad4fde3e1f6df560a0a01f2.svg",
+    "main.082eef35.css.map": "/react-countries/static/css/main.082eef35.css.map",
+    "main.eb27907e.js.map": "/react-countries/static/js/main.eb27907e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.082eef35.css",
+    "static/js/main.eb27907e.js"
+  ]
+}
