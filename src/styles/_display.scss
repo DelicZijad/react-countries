@@ -1,0 +1,93 @@
+@use 'config' as c;
+.display {
+    &--container {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        gap: 2rem;
+        width: 70%;
+
+        @include c.desktop {
+            width: 90%;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &--country {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        align-items: flex-start;
+        gap: 1rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.2);
+    }
+
+    &--info {
+        padding: 1rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    &--img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        height: auto;
+
+        img {
+            border-radius: inherit;
+            max-height: 30vh;
+        }
+    }
+}
+
+.displayDark {
+    color: white;
+
+    &--country {
+        @extend .display--country;
+        background-color: c.$DarkBlue;
+    }
+
+    &--info {
+        @extend .display--info;
+        color: c.$DarkGray !important;
+        font-weight: 300 !important;
+    }
+
+    &--infoSpan {
+        color: c.$White;
+        margin-right: 0.25rem;
+    }
+
+    &--name {
+        margin-bottom: 1rem;
+    }
+
+}
+
+.displayLight {
+    color: c.$VeryDarkBlue2;
+
+    &--country {
+        @extend .display--country;
+        background-color:c.$VeryLightGray;
+    }
+
+    &--info {
+        @extend .display--info;
+        color: c.$DarkGray !important;
+        font-weight: 300 !important;
+    }
+
+    &--infoSpan {
+        color: c.$VeryDarkBlue2;
+        margin-right: 0.25rem;
+    }
+
+    &--name {
+        margin-bottom: 1rem;
+    }
+
+}

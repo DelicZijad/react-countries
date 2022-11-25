@@ -1,0 +1,68 @@
+@use '../src/styles/' as styles;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+font-family: 'Nunito Sans', sans-serif;
+};
+.App{
+    min-height: 100vh;
+    .detail{
+@include styles.desktop {
+        max-height: 100vh;
+    }
+    }
+    
+}
+.AppDark{
+    @extend .App;
+    background-color: styles.$VeryDarkBlue1;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+button{
+    display: block;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+h1,h2,h3,h4{
+    font-weight: inherit;
+}
+.container{
+    width: 90%;
+    margin-inline: auto;
+};
+
+.heading{
+    padding-block: 1.25rem;
+    margin-bottom: 2rem;
+    box-shadow:2px 2px 5px rgba($color: #000000, $alpha: 0.1);
+ .container{
+    display: flex;
+    justify-content: space-between;
+
+ }
+ &--title{
+    font-size: 1.125rem;
+    @include styles.desktop{
+        font-size: 1.25rem
+    }
+ }
+}
+.headingDark{
+    @extend .heading;
+    background-color: styles.$DarkBlue;
+    color: white
+};
+.headingLight{
+    @extend .heading
+}
+
+.hide{
+    display: none;
+}

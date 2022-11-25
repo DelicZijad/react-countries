@@ -1,0 +1,97 @@
+@use './config' as c;
+.details{
+    &--back{
+        padding: 0.5rem 1rem;
+        display: flex;
+        gap: 1rem;
+        box-shadow: 2px -2px 5px rgba($color: #000000, $alpha: 0.3);
+        margin-bottom: 4rem;
+    }
+ &--main{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 2rem;
+    @include c.desktop{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5rem;
+    }
+ }
+ &--name{
+    margin-bottom: 2rem;
+    font-weight: 800;
+ }
+ &--item{
+    font-weight: 600;
+    display: flex;
+  flex-wrap: wrap;
+    gap:0.5rem;
+ }
+ &--value{
+    font-weight: 300;
+
+ } 
+ &--display{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 3rem;
+    margin-bottom: 2rem;
+    >*{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        gap:0.5rem;
+        height: max-content;
+    }
+    @include c.desktop{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ &--neighbours{
+    margin-top: 1rem;
+    display:flex;
+ justify-content: flex-start;
+ flex-wrap: wrap;
+    gap: 1rem;
+ }
+ &--neighbour{
+    padding: 0.5rem 2rem;
+    box-shadow: 2px -2px 5px rgba($color: #000000, $alpha: 0.3);
+ }
+ &--img{
+    height: 100%;
+    width: 100%;
+    @include c.desktop{max-height: 70vh;
+        max-width: 40vw;
+    }
+    
+ }
+}
+.detailsDark{
+    color: white;
+    &--back{
+       @extend .details--back;
+       color:white;
+       background-color: c.$DarkBlue;
+    }
+    &--value{
+        color: c.$DarkGray;
+    }
+    &--neighbour{
+        @extend .details--neighbour;
+        background-color: c.$DarkBlue;
+    }
+}
+.detailsLight{
+    color: c.$VeryDarkBlue2;
+    &--back{
+       @extend .details--back;
+       color:c.$VeryDarkBlue2;
+       background-color: c.$VeryLightGray;
+    }
+    &--value{
+        color: c.$DarkGray;
+    }
+    &--neighbour{
+        @extend .details--neighbour;
+    background-color: c.$VeryLightGray;
+    }
+}
