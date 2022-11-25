@@ -75,11 +75,13 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        top: 110%;
-        left: 50%;
-        transform: translateX(-50%);
-
+        width: 40vw;
+        top: 120%;
+        left: 0;
+       
+@include c.desktop{
+    width: 20vw;
+}
         button {
             padding: 0.5rem;
             color: inherit;
